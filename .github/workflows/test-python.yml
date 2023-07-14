@@ -13,7 +13,8 @@ on:
       - polars/**
       - py-polars/**
       - .github/workflows/test-python.yml
-
+  workflow_dispatch:
+  
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
